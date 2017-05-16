@@ -121,7 +121,7 @@ where
 	\item $\xi(t)=\begin{bmatrix}
 	\xi_{1}(t)&\xi_{2}(t)&\xi_{3}(t)
 	\end{bmatrix}^T \in \mathcal{R}^{3}$ is the disturbance vector
-	\item $J \in \mathcal{R}^{3\times3}$ is the inertia matrix of spacecraft s.t $J=J^{T}>0$
+	\item $J \in \mathcal{R}^{3\times3}$ is the inertia matrix of spacecraft s.t. $J=J^{T}>0$
 	\item $G \in \mathcal{R}^{3\times3}$ is the input matrix for $\xi(t)$
 \end{itemize}
 \end{frame}
@@ -664,14 +664,8 @@ We specify following parameters
 	\item $W=I_{3\times 3}$
 	\item $\alpha=2$
 \end{itemize}
-The select alpha satisfies the condition in (\ref{Alpha for Optimal}):
+The selected alpha satisfies the condition in (\ref{Alpha for Optimal}):
 $$\alpha(=2)\geq\lVert W^{-1}G^{T}\rVert_{M}(=2)$$
-\begin{itemize}
-	\item $K_{\omega}=diag[5,10,15]$
-	\item $K_{r}=diag[5,10,15]$
-\end{itemize}
-The selected $K_{\omega}$ satisfies the condition in (\ref{feedbackGainCondition})
-$$\lambda_{min}(K_{\omega})(=5)>\alpha\lVert G\rVert_{M}(=4)$$
 \end{frame}
 
 \begin{frame}
